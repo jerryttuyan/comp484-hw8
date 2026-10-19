@@ -14,6 +14,8 @@ from: https://coolors.co/f4f7fa-ffffff-a6cfd5-26408b-0f084b
 /* Border box fix */
 html {
   box-sizing: border-box;
+  /* keeps the menu from covering the section heading */
+  scroll-padding-top: 7rem;
 }
 
 *,
@@ -86,6 +88,21 @@ main h3 {
   min-height: 225px;
 }
 
+/* navigation
+------------------------------------*/
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+}
+
 /* Header & Footer 
 ------------------------------------*/
 header {
@@ -121,6 +138,10 @@ footer a:hover {
 .contact-info a {
   padding: 10px;
   display: inline-block;
+}
+
+.contact-info i {
+  margin-right: 6px;
 }
 
 .profile-img {
@@ -204,5 +225,12 @@ section.work-experience p {
 ------------------------------------*/
 section.education {
   background-color: #a6cfd5;
+  /* adds a transparent gradient over the image */
+  background-image:
+    linear-gradient(100deg, rgba(166, 207, 213, 0.97), rgba(166, 207, 213, 0.72)),
+    url("../images/education-landscape.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #0f084b;
 }

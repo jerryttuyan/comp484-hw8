@@ -9,13 +9,26 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Rock+Salt&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Jerry Ttuyan | Resume</title>
   </head>
 
   <body>
+    <!-- // navigation -->
+    <nav aria-label="Resume sections">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" download>Resume (PDF)</a>
+    </nav>
+
     <!-- // Intro -->
-    <header>
+    <header id="about">
       <div class="content-wrap">
         <img
           class="profile-img column-narrow"
@@ -256,7 +269,7 @@
 
     <main>
       <!-- // Work Experience -->
-      <section class="work-experience">
+      <section class="work-experience" id="work">
         <div class="content-wrap">
           <h2>Work Experience</h2>
 
@@ -297,7 +310,7 @@
       </section>
 
       <!-- // Education -->
-      <section class="education">
+      <section class="education" id="education">
         <div class="content-wrap">
           <h2>Education</h2>
 
@@ -321,26 +334,33 @@
     </main>
 
     <!-- // Footer & contact info -->
-    <footer>
+    <footer id="contact">
       <div class="content-wrap">
         <h2>Let's Keep in Touch!</h2>
 
         <!-- Social media and contact links. Add or remove any networks. -->
         <div class="contact-info">
-          <a href="mailto:jerryttuyan@gmail.com">jerryttuyan@gmail.com</a>
-          <a href="http://jerry.is" target="_blank">jerry.is</a>
+          <a href="mailto:jerryttuyan@gmail.com">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            jerryttuyan@gmail.com
+          </a>
+          <a href="http://jerry.is" target="_blank">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i> jerry.is
+          </a>
           <a
             href="https://x.com/jerryttuyan"
             target="_blank"
             rel="noopener noreferrer"
-            >X</a
           >
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X
+          </a>
           <a
             href="https://github.com/jerryttuyan"
             target="_blank"
             rel="noopener noreferrer"
-            >GitHub</a
           >
+            <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+          </a>
         </div>
 
         <p>Copyright 2026 by Jerry Ttuyan</p>
