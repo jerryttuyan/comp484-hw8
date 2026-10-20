@@ -227,10 +227,15 @@ section.education {
   background-color: #a6cfd5;
   /* adds a transparent gradient over the image */
   background-image:
-    linear-gradient(100deg, rgba(166, 207, 213, 0.97), rgba(166, 207, 213, 0.72)),
+    linear-gradient(
+      100deg,
+      rgba(166, 207, 213, 0.97),
+      rgba(166, 207, 213, 0.01)
+    ),
     url("../images/education-landscape.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #0f084b;
+  background-attachment: fixed;
 }
